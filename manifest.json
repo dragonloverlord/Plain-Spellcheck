@@ -3,7 +3,7 @@
   "name": "Plain Spellcheck",
   "short_name": "Plain Spellcheck",
   "description": "A simple spellchecker.",
-  "version": "0.0.0.1",
+  "version": "1.0.0.1",
   "minimum_chrome_version": "38",
   "offline_enabled":true,
 
