@@ -18,6 +18,10 @@ chrome.runtime.onInstalled.addListener(function(){
 
 chrome.contextMenus.onClicked.addListener(function(itemData){
   if (itemData.menuItemId == "stayontop"){
-    chrome.app.window.get("mainWindow").setAlwaysOnTop(true);
+    if (chrome.app.window.get("mainWindow").isAlwaysOnTop() == false){
+      chrome.app.window.get("mainWindow").setAlwaysOnTop(true);
+    }else{
+      chrome.app.window.get("mainWindow").setAlwaysOnTop(false);
+    }
   }
 });
