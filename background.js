@@ -3,7 +3,10 @@ chrome.app.runtime.onLaunched.addListener(function(launchData) {
     'index.html',
     {
       id: 'mainWindow',
-      bounds: {width: 900, height: 600}
+      innerBounds: {
+        width: 900,
+        height: 600
+      }
     }
   );
 });
