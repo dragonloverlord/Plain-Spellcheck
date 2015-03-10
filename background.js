@@ -6,6 +6,9 @@ chrome.app.runtime.onLaunched.addListener(function(launchData) {
       innerBounds: {
         width: 900,
         height: 600
+      },
+      frame:{
+        type:"none"
       }
     }
   );
