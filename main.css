@@ -7,15 +7,11 @@ html, body{
 }
 
 .textarea{
-  box-sizing:none;
+  box-sizing:border-box;
   width:100%;
   height:100%;
   resize:none;
   outline:none;
   box-shadow:none;
-  transition:box-shadow 0.4s;
-}
-
-.textarea:focus{
-  box-shadow:0 0 5px #44f;
+  word-wrap:break-word;
 }
